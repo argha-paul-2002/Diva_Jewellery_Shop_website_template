@@ -1,0 +1,817 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*.btn {
+    cursor: pointer;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -999;
+}
+
+.background .back-img img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.back-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+}
+
+.navi {
+    background-color: transparent;
+    width: 86%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 15 0 15 0;
+    background-color: transparent;
+}
+
+.left-img {
+    width: 15%;
+}
+
+.right {
+    height: 25px;
+    width: 77%;
+    /* position: absolute; */
+    padding: 15 25 15 0;
+    text-align: right;
+}
+
+.right ul a li {
+    list-style: none;
+    display: inline-table;
+    color: white;
+    padding-bottom: 10px;
+    margin: 0 10 0 10;
+    transition: 0.5s;
+}
+
+.right ul a li:hover{
+    color: #e2b741;
+    border-bottom: 1px solid #e2b741;
+}
+
+.navbar .right-img {
+    position: absolute;
+    right: 10%;
+    padding: 5 20 0 0;
+}
+
+.navbar .right-img:hover {
+    cursor: pointer;
+}
+
+.navbar .right-img .ing {
+    /* position: absolute; */
+}
+
+.navbar .right-img .ing {
+    position: absolute;
+}
+
+.navbar .right-img .ing1 {
+    position: absolute;
+}
+
+.navbar .right-img .ing1:hover {
+    /* cursor: pointer; */
+    display: none;
+    cursor: pointer;
+}
+
+.main-container {
+    background-color: white;
+    width: 86%;
+    z-index: -50;
+    margin: auto;
+    /* padding: 30 0 0 0; */
+}
+
+.first-sec-img {
+    height: 88%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.first-sec-overlay {
+    height: 88%;
+    width: 86%;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.65s;
+}
+
+.first-sec-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.first-sec-overlay-txt {
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    margin: 17% 0 0 10%;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    z-index: 3;
+}
+
+
+
+.second-sec-img {
+    height: 83%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#second-sec-small-txt {
+    position: absolute;
+    z-index: 1;
+    margin-top: 53%;
+    font-size: 18;
+    transition: 0.5s;
+    color: brown;
+}
+
+.first-sec-small-txt {
+    font-size: 20;
+    font-weight: bold;
+}
+
+.first-sec-big-txt {
+    font-size: 50;
+    margin-bottom: 5%;
+}
+
+.first-sec-hr {
+    height: 2px;
+    width: 15%;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+/*FIRST SECTION CSS END*/
+
+/*SECOND SECTION CSS START*/
+
+.second-sec-button {
+    position: absolute;
+    /* margin-top: 32%; */
+    /* margin-left: 10%; */
+    /* padding: 44% 0 0 0; */
+    padding: 16 30px;
+    z-index: 5;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    letter-spacing: 2;
+    font-weight: bold;
+    border-radius: 15% 0% 15% 0%;
+
+}
+
+.second-section:hover .second-sec-button {
+    /* background-color: rgba(110, 110, 110, 0.8); */
+    background-image: url(../images/background.jpg);
+    border: 0;
+    border-radius: 15% 0% 15% 0%;
+}
+
+.second-section:hover .second-sec-button_hover {
+    opacity: 1;
+    width: 100px;
+    border: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
+    border-radius: 50% 0% 50% 0%;
+}
+
+.second-sec-button_hover {
+    position: absolute;
+    /* margin-top: 32%; */
+    /* margin-left: 10%; */
+    /* padding: 44% 0 0 0; */
+    padding: 16 30px;
+    z-index: 6;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(88, 88, 88, 0.6);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    letter-spacing: 2;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.sec-btn {
+    padding: 30% 0 0 10%;
+    position: absolute;
+}
+
+.second-section {
+    height: 83%;
+}
+
+.sec-img {
+    background-image: url(../images/photo/2.jpg);
+    height: 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 86%;
+    position: absolute;
+    padding: 0 0 0 0;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.sec-grey-overlay {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    transition: 1s;
+    height: 83%;
+    width: 86%;
+}
+
+.sec-button {
+    padding: 12 30;
+}
+
+.second-sec-big-txt {
+    /* position: absolute; */
+    background-color: transparent;
+    font-size: 50;
+    padding: 44% 0 18px 19%;
+    /* margin-top: 35%; */
+    font-weight: bold;
+    transition: 1s;
+    /* opacity: 0.5; */
+}
+
+.second-sec-overlay-txt {
+    display: inline-block;
+    /* position: absolute; */
+    width: 53%;
+    position: absolute;
+    /* margin: 20% 0 0 10%; */
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    /* margin-top: 10%; */
+    z-index: 3;
+    transition: 1s;
+}
+
+.second-section:hover .second-sec-overlay-txt p {
+    opacity: 1;
+}
+
+.second-section:hover .sec-grey-overlay {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.second-section:hover .second-sec-big-txt {
+    padding: 28% 0 18px 19%;
+}
+
+.second-sec-small-txt {
+    position: absolute;
+    margin-top: 1;
+    z-index: -1;
+    font-size: 18px;
+    margin-top: 52%;
+}
+
+.second-sec-overlay-txt p {
+    font-size: 18;
+    opacity: 0;
+    transition: 1s;
+    padding: 0 0 0 19%;
+}
+
+/*SECOND SECTION CSS ENDS*/
+
+/*THIRD SECTION CSS START*/
+
+.third-sec-button {
+    position: absolute;
+    /* margin-top: 32%; */
+    /* margin-left: 10%; */
+    /* padding: 44% 0 0 0; */
+    padding: 16 30px;
+    z-index: 5;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    letter-spacing: 2;
+    font-weight: bold;
+    border-radius: 15% 0% 15% 0%;
+
+}
+
+.third-section:hover .third-sec-button {
+    /* background-color: rgba(110, 110, 110, 0.8); */
+    background-image: url(../images/background.jpg);
+    border: 0;
+    border-radius: 15% 0% 15% 0%;
+}
+
+.third-section:hover .third-sec-button_hover {
+    opacity: 1;
+    width: 100px;
+    border: 0;
+    /* box-shadow: 0px 0px 30px rgba(145, 145, 145, 0.7); */
+    border-radius: 50% 0% 50% 0%;
+}
+
+.third-sec-button_hover {
+    position: absolute;
+    /* margin-top: 32%; */
+    /* margin-left: 10%; */
+    /* padding: 44% 0 0 0; */
+    padding: 16 30px;
+    z-index: 6;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(88, 88, 88, 0.6);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    letter-spacing: 2;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.thrd-btn {
+    padding: 30% 0 0 10%;
+    position: absolute;
+}
+
+.third-section {
+    height: 83%;
+}
+
+.thrd-img {
+    background-image: url(../images/photo/32.jpg);
+    height: 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 86%;
+    position: absolute;
+    padding: 0 0 0 0;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.thrd-grey-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.1s;
+    height: 83%;
+    width: 86%;
+}
+
+.thrd-button {
+    padding: 12 30;
+}
+
+.third-sec-big-txt {
+    /* position: absolute; */
+    background-color: transparent;
+    font-size: 50;
+    padding: 44% 0 18px 19%;
+    /* margin-top: 35%; */
+    font-weight: bold;
+    transition: 1s;
+    /* opacity: 0.5; */
+}
+
+.third-sec-overlay-txt {
+    display: inline-block;
+    /* position: absolute; */
+    width: 53%;
+    position: absolute;
+    /* margin: 20% 0 0 10%; */
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    /* margin-top: 10%; */
+    z-index: 3;
+    transition: 1s;
+}
+
+.third-section:hover .third-sec-overlay-txt p {
+    opacity: 1;
+}
+
+.third-section:hover .thrd-grey-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+
+}
+
+.third-section:hover .third-sec-big-txt {
+    padding: 28% 0 18px 19%;
+}
+
+.third-sec-small-txt {
+    position: absolute;
+    margin-top: 1;
+    z-index: -1;
+    font-size: 18px;
+    margin-top: 52%;
+}
+
+.third-sec-overlay-txt p {
+    font-size: 18;
+    opacity: 0;
+    transition: 1s;
+    padding: 0 0 0 19%;
+}
+
+/*THIRD SECTION CSS END*/
+
+/*FOURTH SECTION CSS START*/
+
+.fourth-section {
+    margin-top: 2%;
+    height: 58%;
+    padding: 0 0% 0 10%;
+    /* background-color: blue; */
+}
+
+.four-img-cover {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 60% 30%;
+    background-size: cover;
+    background-image: url(../images/photo/a-3.jpg);
+}
+
+.fourth-content {
+    display: flex;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.four-left {
+    width: 40%;
+    padding-right: 5%;
+    /* background-color: aquamarine; */
+}
+
+.four-heading {
+    font-size: 40;
+    margin: 15% 0 4% 0;
+}
+
+.four-text {
+    text-align: justify;
+    font-size: 21px;
+    color: rgb(87, 87, 87);
+}
+
+.four-right {
+    width: 45%;
+    background-color: rgba(255, 140, 140, 0.55);
+}
+
+/*OVERLAY SHADOW SECTION*/
+
+.four-img-overlay-txt {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5;
+    opacity: 0;
+    width: 35%;
+    padding-top: 14%;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.four-overlay {
+    position: absolute;
+    width: 35%;
+    height: 58%;
+    opacity: 0;
+    transition: 1s ease;
+    /* background-color: #008CBA; */
+    background-image: url(../images/background.jpg);
+}
+
+.four-right:hover .four-overlay {
+    opacity: 0.2;
+}
+
+.four-right:hover .four-img-overlay-txt {
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+    opacity: 1;
+}
+
+
+
+/*FOURTH SECTION CSS END*/
+
+/*FIFTH SECTION CSS START*/
+
+
+.fifth-section {
+    margin-top: 2%;
+    height: 58%;
+    padding: 0 0% 0 10%;
+    /* background-color: blue; */
+}
+
+.five-img-cover {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 60% 30%;
+    background-size: cover;
+    background-image: url(../images/photo/1.jpg);
+}
+
+.five-content {
+    display: flex;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.five-right {
+    width: 40%;
+    padding-left: 5%;
+    /* background-color: aquamarine; */
+}
+
+.five-heading {
+    font-size: 40;
+    margin: 15% 0 4% 0;
+}
+
+.five-text {
+    text-align: justify;
+    font-size: 21px;
+    color: rgb(87, 87, 87);
+}
+
+.five-left {
+    width: 45%;
+    background-color: rgba(255, 140, 140, 0.55);
+}
+
+/*OVERLAY SHADOW SECTION*/
+
+
+.five-img-overlay-txt {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5;
+    opacity: 0;
+    width: 35%;
+    padding-top: 14%;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.five-overlay {
+    position: absolute;
+    width: 35%;
+    height: 58%;
+    opacity: 0;
+    transition: 1s ease;
+    /* background-color: #008CBA; */
+    background-image: url(../images/background.jpg);
+}
+
+.five-left:hover .five-overlay {
+    opacity: 0.2;
+}
+
+.five-left:hover .five-img-overlay-txt {
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+    opacity: 1;
+}
+
+/*FIFTH SECTION CSS END*/
+
+
+/*SIXTH SECTION CSS START*/
+
+
+.sixth-section {
+    margin-top: 2%;
+    height: 58%;
+    padding: 0 0% 20 10%;
+    /* background-color: blue; */
+}
+
+.six-img-cover {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 60% 30%;
+    background-size: cover;
+    background-image: url(../images/photo/6.jpg);
+}
+
+.sixth-content {
+    display: flex;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.six-left {
+    width: 40%;
+    padding-right: 5%;
+    /* background-color: aquamarine; */
+}
+
+.six-heading {
+    font-size: 40;
+    margin: 15% 0 4% 0;
+}
+
+.six-text {
+    text-align: justify;
+    font-size: 21px;
+    color: rgb(87, 87, 87);
+}
+
+.six-right {
+    width: 45%;
+    overflow: hidden;
+    background-color: rgba(255, 140, 140, 0.55);
+}
+
+
+/*OVERLAY SHADOW SECTION*/
+
+.six-img-overlay-txt {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5;
+    opacity: 0;
+    width: 35%;
+    padding-top: 14%;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.six-overlay {
+    position: absolute;
+    width: 35%;
+    height: 58%;
+    opacity: 0;
+    transition: 1s ease;
+    /* background-color: #008CBA; */
+    background-image: url(../images/background.jpg);
+}
+
+.six-right:hover .six-overlay {
+    opacity: 0.7;
+}
+
+.six-right:hover .six-img-overlay-txt {
+    opacity: 1;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+}
+
+/*SIXTH SECTION CSS ENDS*/
+
+
+/* FOOTER SECTION START*/
+
+.foot {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 86%;
+    height: 40%;
+    z-index: -50;
+    margin: auto;
+    padding: 100 0 0 0;
+    display: flex;
+    /* padding: 30 0 0 0; */
+}
+
+.about-us {
+    /* float: left; */
+    width: 20%;
+    padding: 0 20 0 50;
+}
+
+.about-us-body {
+    padding: 20 0 0 0;
+    font-size: 15;
+    color: rgb(168, 168, 168);
+}
+
+.foot-div-body ul {
+    padding: 12px 0 0 18px;
+    color: rgb(168, 168, 168);
+}
+
+.foot-div-body ul li {
+    padding: 12px 0 0 0;
+}
+
+.foot-div-body ul li a {
+    color: rgb(168, 168, 168);
+}
+
+.foot-div-body ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.hori-line {
+    width: 0;
+    height: 195px;
+    border-left: 1px solid rgb(168, 168, 168);
+    /* float: left; */
+}
+
+.follow-us,
+.whats-hot,
+.company {
+    padding: 0 0 0 50;
+    width: 20%;
+    /* float: left; */
+}
+
+.foot-head {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.copy-right {
+    display: block;
+    width: 86%;
+    height: 100;
+    margin: auto;
+    text-align: center;
+    color: rgb(168, 168, 168);
+}
+
+.copy-right-txt {
+    padding: 50 0 0 0;
+    display: inline-block;
+}
+
+ /*SCROLL TO TOP BUTTON CSS*/
+ .upward-top-button{
+    background-color: #E2B741;
+    width: 50px;
+    text-align: center;
+    font-size: 40;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 100%;
+    height: 50px;
+
+}
+.upward-top-button p{
+    padding-top: 10;
+}
+.top-button{
+    /* position: absolute; */
+    bottom: 10px;
+    right: 21px;
+    position: fixed;
+}
+.top-button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*SCROLL TO TOP BUTTON CSS END*/

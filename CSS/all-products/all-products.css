@@ -1,0 +1,489 @@
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        *.btn {
+            cursor: pointer;
+        }
+
+        .background {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -999;
+        }
+
+        .background .back-img img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .back-overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+        }
+
+        /*NAVIGATION BAR CSS START*/
+
+        .navi {
+            background-color: transparent;
+            width: 86%;
+            margin: auto;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            height: auto;
+            padding: 15 0 15 0;
+            background-color: rgb(0, 0, 0, 0.1);
+        }
+
+        .left-img {
+            width: 15%;
+        }
+
+        .right {
+            height: 25px;
+            width: 77%;
+            /* position: absolute; */
+            padding: 15 25 15 0;
+            text-align: right;
+        }
+
+        .right ul a li {
+            list-style: none;
+            display: inline-table;
+            color: white;
+            padding-bottom: 10px;
+            margin: 0 10 0 10;
+            transition: 0.5s;
+        }
+
+        .right ul a li:hover {
+            color: #e2b741;
+            border-bottom: 1px solid #e2b741;
+        }
+
+        .navbar .right-img {
+            position: absolute;
+            right: 10%;
+            padding: 5 20 0 0;
+        }
+
+        .navbar .right-img:hover {
+            cursor: pointer;
+        }
+
+        .navbar .right-img .ing {
+            /* position: absolute; */
+        }
+
+        .navbar .right-img .ing {
+            position: absolute;
+        }
+
+        .navbar .right-img .ing1 {
+            position: absolute;
+        }
+
+        .navbar .right-img .ing1:hover {
+            /* cursor: pointer; */
+            display: none;
+            cursor: pointer;
+        }
+
+        /*******************************NAVIGATION BAR CSS ENDS*/
+
+        /******************************SCROLL TO TOP BUTTON CSS*/
+        .upward-top-button {
+            background-color: #E2B741;
+            width: 50px;
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 100%;
+            height: 50px;
+
+        }
+
+        .upward-top-button p {
+            padding-top: 10;
+        }
+
+        .top-button {
+            /* position: absolute; */
+            bottom: 10px;
+            right: 21px;
+            position: fixed;
+        }
+
+        .top-button a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        /*SCROLL TO TOP BUTTON CSS END*/
+        /*MAIN CONTAINER CSS STARTS*/
+
+        .main-container {
+            background-color: white;
+            width: 86%;
+            /* height: 500%; */
+            z-index: -50;
+            margin: auto;
+            /* padding: 30 0 0 0; */
+        }
+
+        .main-section {
+            background-color: rgb(255, 255, 255);
+            padding: 0 20 0 20;
+        }
+
+        /*HEADING TEXT CSS*/
+
+        .heading-txt {
+            font-size: 50;
+            padding: 20 0 20 0;
+        }
+
+        .search-result-txt {
+            font-size: 20;
+            margin-bottom: 20;
+        }
+
+        /************************FIRST SECTION CSS START********************************/
+
+        .first-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .first-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .first-sec-txt-one {
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10 0 10 0;
+            margin-top: 10;
+        }
+
+        .first-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .first-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************FIRST SECTION CSS ENDS********************************/
+
+        /********************GENERALIZED HOVER SHOP PICTURE FOR ALL SECTION********************/
+
+        .hover-shop-pic {
+            background-image: url(../../images/yellow.png);
+            background-repeat: no-repeat;
+            height: 50;
+            width: 0;
+            background-color: rgba(54, 54, 54, 0.9);
+            background-position: 50% 50%;
+            /* background-size: cover; */
+            position: absolute;
+            border-radius: 0% 30% 0% 30%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+            margin: 5 0 0 5;
+            transition: 0.5s;
+            z-index: 5;
+        }
+
+        .hover-shop-pic:hover {
+            background-image: url(../../images/white.png);
+            cursor: pointer;
+        }
+
+        /********************************GENERALIZED HOVER SHOP PICTURE FOR ALL SECTION ENDS********************/
+
+
+        /************************SECOND SECTION CSS START********************************/
+
+        .second-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .second-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+   
+        .second-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .second-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .second-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************SECOND SECTION CSS ENDS********************************/
+
+        /************************THIRD SECTION CSS START********************************/
+
+        .third-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .third-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+
+        .third-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .third-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .third-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************THIRD SECTION CSS ENDS********************************/
+
+        /************************FOURTH SECTION CSS START********************************/
+
+        .fourth-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .fourth-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .fourth-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .fourth-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+
+        .fourth-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************FOURTH SECTION CSS ENDS********************************/
+
+        /************************FIFTH SECTION CSS START********************************/
+
+        .fifth-section {
+            display: flex;
+            height: 54%;
+            width: 100%;
+        }
+
+        .fifth-sec-whole {
+            width: 25%;
+            margin: 0 20 0 0;
+            height: 93%;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.5);
+        }
+
+        .fifth-sec-whole-four {
+            margin: 0 0 0 0;
+        }
+
+        .fifth-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+        }
+        .fifth-sec-whole:hover {
+            cursor: pointer;
+        }
+
+        /***********************************FIFTH SECTION CSS ENDS********************************/
+
+        /*****************************FOOTER AND COPYRIGHT SECTION START************************/
+
+        .foot {
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 86%;
+            height: 40%;
+            z-index: -50;
+            margin: auto;
+            padding: 100 0 0 0;
+            display: flex;
+            /* padding: 30 0 0 0; */
+        }
+
+        .about-us {
+            /* float: left; */
+            width: 20%;
+            padding: 0 20 0 50;
+        }
+
+        .about-us-body {
+            padding: 20 0 0 0;
+            font-size: 15;
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul {
+            padding: 12px 0 0 18px;
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul li {
+            padding: 12px 0 0 0;
+        }
+
+        .foot-div-body ul li a {
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .hori-line {
+            width: 0;
+            height: 195px;
+            border-left: 1px solid rgb(168, 168, 168);
+            /* float: left; */
+        }
+
+        .follow-us,
+        .whats-hot,
+        .company {
+            padding: 0 0 0 50;
+            width: 20%;
+            /* float: left; */
+        }
+
+        .foot-head {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .copy-right {
+            display: block;
+            width: 86%;
+            height: 100;
+            margin: auto;
+            text-align: center;
+            color: rgb(168, 168, 168);
+        }
+
+        .copy-right-txt {
+            padding: 50 0 0 0;
+            display: inline-block;
+        }
+
+        /****************************FOOTER AND COPYRIGHT SECTION ENDS****************************/
+
+        /******************************ALL Headings***********************************/
+        .heading-txts {
+            font-family: Castellar;
+            font-weight: bold;
+            font-size: 25;
+            color: #8d8d8d;
+            margin-bottom: 15;
+        }
+
+        /**********************************All Image CSS***************************/
+
+ 
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img1 {
+            width: 261px;
+            height: 253px;
+            opacity: 0;
+            object-fit: cover;
+            position: absolute;
+            transition: 0.3s ease;
+        }
+        .pictures{
+            height: 236;
+        }
+
+        /***********************************HOVERS******************************/
+
+        .first-sec-whole:hover .over-txt p{
+            padding: 280 0 0 20;
+        }
+        .first-sec-whole:hover .over-txt{
+            height:330px;
+            width: 260px;
+            opacity: 1;
+        }
+
+        .first-sec-whole:hover .hover-shop-pic {
+            height: 50;
+            width: 50;
+            z-index: 10;
+        }
+
+        .first-sec-whole:hover .img1{
+            opacity: 1;
+        }
+        .second-sec-whole:hover .img1{
+            opacity: 1;
+        }
+        .third-sec-whole:hover .img1{
+            opacity: 1;
+        }
+        .fourth-sec-whole:hover .img1{
+            opacity: 1;
+        }
+        .fifth-sec-whole:hover .img1{
+            opacity: 1;
+        }
+
+         /***********************************HOVERS END******************************/

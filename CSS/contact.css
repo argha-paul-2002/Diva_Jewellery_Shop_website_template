@@ -1,0 +1,346 @@
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        *.btn {
+            cursor: pointer;
+        }
+
+        .background {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -999;
+        }
+
+        .background .back-img img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .back-overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+        }
+
+        /*NAVIGATION BAR CSS START*/
+
+        .navi {
+            background-color: transparent;
+            width: 86%;
+            margin: auto;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            height: auto;
+            padding: 15 0 15 0;
+            background-color: rgb(0, 0, 0, 0.1);
+        }
+
+        .left-img {
+            width: 15%;
+        }
+
+        .right {
+            height: 25px;
+            width: 77%;
+            /* position: absolute; */
+            padding: 15 25 15 0;
+            text-align: right;
+        }
+
+        .right ul a li {
+            list-style: none;
+            display: inline-table;
+            color: white;
+            padding-bottom: 10px;
+            margin: 0 10 0 10;
+            transition: 0.5s;
+        }
+
+        .right ul a li:hover{
+            color: #e2b741;
+             border-bottom: 1px solid #e2b741;
+        }
+
+        .navbar .right-img {
+            position: absolute;
+            right: 10%;
+            padding: 5 20 0 0;
+        }
+
+        .navbar .right-img:hover {
+            cursor: pointer;
+        }
+
+        .navbar .right-img .ing {
+            /* position: absolute; */
+        }
+
+        .navbar .right-img .ing {
+            position: absolute;
+        }
+
+        .navbar .right-img .ing1 {
+            position: absolute;
+        }
+
+        .navbar .right-img .ing1:hover {
+            /* cursor: pointer; */
+            display: none;
+            cursor: pointer;
+        }
+
+        /*NAVIGATION BAR CSS ENDS*/
+
+        /*MAIN CONTAINER CSS STARTS*/
+
+        .main-container {
+            background-color: white;
+            width: 86%;
+            z-index: -50;
+            margin: auto;
+            /* padding: 30 0 0 0; */
+        }
+
+        /*FIRST SECTION STARTS*/
+
+        .first-section {
+            height: 72%;
+
+        }
+
+        .first-image-layer {
+            background-image: url(../images/photo/b-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .first-image-overlay {
+            height: 100%;
+            width: 100%;
+            /* position: absolute; */
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .first-gradirnt-layer {
+            position: absolute;
+            height: 50%;
+            margin: 5% 0 0 8%;
+            width: 70%;
+            /* background-color: aqua; */
+            background-image: linear-gradient(to right, white, black);
+        }
+
+        .first-texts {
+            position: absolute;
+            height: 50%;
+            width: 70%;
+            /* background-color: aqua; */
+            text-align: center;
+            margin: 5% 0 0 8%;
+            color: rgb(255, 255, 255);
+        }
+
+        .first-big-txt {
+            font-size: 35px;
+            margin-top: 50;
+        }
+
+        .first-small-txt {
+            margin-top: 10;
+            font-size: 20;
+        }
+
+        .first-big-button input {
+            width: 400px;
+            padding: 20 80;
+            border-radius: 0 20px;
+            border: none;
+            outline: none;
+            margin-top: 30;
+            text-align: center;
+            color: rgb(236, 219, 122);
+            /* background-color: rgb(87, 87, 87); */
+            background-image: linear-gradient(to right, rgb(58, 58, 58), rgb(226, 226, 226));
+        }
+
+        .first-big-button input::placeholder {
+            color: rgb(255, 255, 255);
+        }
+
+        .first-big-button input:focus::placeholder {
+            color: transparent;
+        }
+
+        .first-small-button input {
+            margin-top: 20;
+            padding: 10 50;
+            border-radius: 20px 0px;
+            border: 0;
+            /* background-image: url(../images/back.png); */
+            background-image: linear-gradient(to right, rgb(58, 58, 58), rgb(226, 226, 226), rgb(58, 58, 58));
+            cursor: pointer;
+            letter-spacing: 2;
+            transition: 1s;
+        }
+
+        .first-small-button input:hover {
+            background-image: linear-gradient(to right, rgb(226, 226, 226), rgb(58, 58, 58), rgb(226, 226, 226));
+            color: rgb(255, 255, 255);
+        }
+
+        /*FIRST SECTION ENDS*/
+
+        /*SECOND SECTION START*/
+        .second-content {
+            display: flex;
+            padding: 5% 10% 0 10%;
+            height: 45%;
+        }
+
+        .sec-content-one,
+        .sec-content-two,
+        .sec-content-three {
+            width: 25%;
+            
+        }
+
+        .sec-content-one,
+        .sec-content-two {
+            padding: 0 100 0 0;
+        }
+
+        .sec-content-head {
+            font-size: 22;
+            margin-bottom: 20;
+        }
+
+        .sec-content-txt {
+            font-size: 18;
+            color: rgb(68, 68, 68);
+        }
+
+
+        /*SECOND SECTION ENDS*/
+
+        /*FOOTER AND COPYRIGHT SECTION START*/
+        .foot {
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 86%;
+            height: 40%;
+            z-index: -50;
+            margin: auto;
+            padding: 100 0 0 0;
+            display: flex;
+            /* padding: 30 0 0 0; */
+        }
+
+        .about-us {
+            /* float: left; */
+            width: 20%;
+            padding: 0 20 0 50;
+        }
+
+        .about-us-body {
+            padding: 20 0 0 0;
+            font-size: 15;
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul {
+            padding: 12px 0 0 18px;
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul li {
+            padding: 12px 0 0 0;
+        }
+
+        .foot-div-body ul li a {
+            color: rgb(168, 168, 168);
+        }
+
+        .foot-div-body ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .hori-line {
+            width: 0;
+            height: 195px;
+            border-left: 1px solid rgb(168, 168, 168);
+            /* float: left; */
+        }
+
+        .follow-us,
+        .whats-hot,
+        .company {
+            padding: 0 0 0 50;
+            width: 20%;
+            /* float: left; */
+        }
+
+        .foot-head {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .copy-right {
+            display: block;
+            width: 86%;
+            height: 100;
+            margin: auto;
+            text-align: center;
+            color: rgb(168, 168, 168);
+        }
+
+        .copy-right-txt {
+            padding: 50 0 0 0;
+            display: inline-block;
+        }
+
+        /*FOOTER AND COPYRIGHT SECTION ENDS*/
+
+         /*SCROLL TO TOP BUTTON CSS*/
+         .upward-top-button{
+            background-color: #E2B741;
+            width: 50px;
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 100%;
+            height: 50px;
+
+        }
+        .upward-top-button p{
+            padding-top: 10;
+        }
+        .top-button{
+            /* position: absolute; */
+            bottom: 10px;
+            right: 21px;
+            position: fixed;
+        }
+        .top-button a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        /*SCROLL TO TOP BUTTON CSS END*/

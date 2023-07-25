@@ -1,0 +1,1082 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*.btn {
+    cursor: pointer;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -999;
+}
+
+.background .back-img img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.back-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+}
+
+.main-container {
+    background-color: white;
+    width: 86%;
+    z-index: -50;
+    margin: auto;
+    padding: 30 0 0 0;
+}
+
+.navi {
+    background-color: transparent;
+    width: 86%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 15 0 15 0;
+    background-color: transparent;
+}
+
+.left-img {
+    width: 15%;
+}
+
+.right {
+    height: 25px;
+    width: 77%;
+    /* position: absolute; */
+    padding: 15 25 15 0;
+    text-align: right;
+}
+
+.right ul a li {
+    list-style: none;
+    display: inline-table;
+    color: white;
+    padding-bottom: 10px;
+    margin: 0 10 0 10;
+    transition: 0.5s;
+}
+
+.right ul a li:hover{
+    color: #e2b741;
+    border-bottom: 1px solid #e2b741;
+}
+.navbar .right-img {
+    position: absolute;
+    right: 10%;
+    padding: 5 20 0 0;
+}
+
+.navbar .right-img:hover {
+    cursor: pointer;
+}
+
+.navbar .right-img .ing {
+    /* position: absolute; */
+}
+
+.navbar .right-img .ing {
+    position: absolute;
+}
+
+.navbar .right-img .ing1 {
+    position: absolute;
+}
+
+.navbar .right-img .ing1:hover {
+    /* cursor: pointer; */
+    display: none;
+    cursor: pointer;
+}
+
+.banner-main {
+    width: 86%;
+    height: 78%;
+    margin: auto auto;
+    z-index: 0;
+    /* margin-bottom: 15; */
+    /* margin-top: 30; */
+    overflow: hidden;
+    transition: .5s ease;
+
+    /* background-color: burlywood; */
+}
+
+.banner-main .banner-picture img {
+    width: 100%;
+    transition: 1s ease;
+    height: 110%;
+    overflow: hidden;
+    z-index: -45;
+}
+
+.banner-main:hover {
+    box-shadow: 0px 0px 50px rgba(110, 110, 110, 0.7);
+}
+
+.banner-picture:hover img {
+    filter: blur(1px);
+}
+
+.banner-main:hover .over {
+    transition: 1s ease;
+    display: block;
+    width: 30%;
+}
+
+.over {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 6;
+    border-radius: 0 0% 50% 0;
+    position: absolute;
+    height: 78%;
+    width: 0%;
+}
+
+.banner-main .banner-picture {
+    overflow: hidden;
+    z-index: 6;
+    position: absolute;
+    height: 78%;
+    width: 74%;
+}
+
+.banner-text {
+    position: absolute;
+    /* background-color:blueviolet; */
+    width: 30%;
+    z-index: 7;
+    text-align: left;
+    top: 40%;
+}
+
+.banner-btn {
+    position: absolute;
+    z-index: 8;
+    top: 62%;
+}
+
+.btn-1 {
+    padding: 12 30;
+    font-weight: bold;
+    font-size: 18;
+    letter-spacing: 2;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.txt-btn {
+    margin: 0 0 0 50;
+    color: white;
+
+}
+
+.galery {
+    overflow: hidden;
+    padding: 25 0 25 0;
+    /* height: 100%; */
+
+}
+
+.fst {
+    overflow: hidden;
+    /* float: left; */
+    /* position: absolute; */
+    display: flex;
+    width: 86%;
+    height: 78%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.fst-1 {
+    /* position: absolute; */
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.fst-2 {
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 20;
+}
+
+.i-33 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/33.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+
+    /* transition: transform 300ms; */
+    /* background-color: black; */
+    /* float: left; */
+
+}
+
+.fst-1:hover .i-33 {
+    width: 102%;
+    height: 105%;
+}
+
+.i-35 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/35.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.fst-2:hover .i-35 {
+    width: 102%;
+    height: 105%;
+}
+
+.borders-top {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders-right {
+    width: 22%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders-left {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders-bottom {
+    width: 0%;
+    height: 73%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+/* .borders:hover .i-35 {
+    width: 102%;
+    height: 105%;
+}
+.borders2:hover .i-35 {
+    width: 102%;
+    height: 105%;
+} */
+
+.fst-1:hover .borders-top {
+    width: 22%;
+
+}
+
+.fst-1:hover .borders-right {
+    height: 73%;
+}
+
+.fst-1:hover .borders-left {
+    height: 73%;
+
+}
+
+.fst-1:hover .borders-bottom {
+    width: 22%;
+}
+
+.borders2-top {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders2-right {
+    width: 45%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders2-left {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders2-bottom {
+    width: 0%;
+    height: 73%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.fst-2:hover .borders2-left {
+    height: 73%;
+}
+
+.fst-2:hover .borders2-right {
+    height: 73%;
+}
+
+.fst-2:hover .borders2-top {
+    width: 45%;
+}
+
+.fst-2:hover .borders2-bottom {
+    width: 45%;
+}
+
+.fst-1-txt,
+.fst-2-txt {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    margin: 32% 0 0 3%;
+    font-size: 27px;
+    /* text-decoration: underline; */
+    display: none;
+}
+
+.fst-1:hover .fst-1-txt {
+    display: block;
+}
+
+.fst-2:hover .fst-2-txt {
+    display: block;
+}
+
+.sec {
+    overflow: hidden;
+    /* float: left; */
+    /* position: absolute; */
+    display: flex;
+    width: 86%;
+    height: 78%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.sec-1 {
+    /* position: absolute; */
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sec-2 {
+    width: 31%;
+    height: 100%;
+    overflow: hidden;
+    /* margin-left: 10;
+    margin-right: 10; */
+    padding-left: 2%;
+}
+
+.sec-3 {
+    width: 32%;
+    height: 100%;
+    overflow: hidden;
+    /* margin-left: 10; */
+    padding-left: 2%;
+}
+
+.sec-1:hover .a-1 {
+    /* Zoom Section 1 Picture*/
+    width: 102%;
+    height: 105%;
+}
+
+.sec-2:hover .i-38 {
+    /* Zoom Section 2 Picture*/
+    width: 102%;
+    height: 105%;
+}
+
+.sec-3:hover .i-5 {
+    /* Zoom Section 3 Picture*/
+    width: 102%;
+    height: 105%;
+}
+
+.sec-1:hover .borders-top {
+    width: 22%;
+
+}
+
+.sec-1:hover .borders-right {
+    height: 73%;
+}
+
+.sec-1:hover .borders-left {
+    height: 73%;
+
+}
+
+.sec-1:hover .borders-bottom {
+    width: 22%;
+}
+
+.sec-1-txt {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    margin: 32% 0 0 3%;
+    font-size: 27px;
+    display: none;
+}
+
+.sec-1:hover .fst-1-txt {
+    display: block;
+}
+
+.sec-1:hover .fst-2-txt {
+    display: block;
+}
+
+.a-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/a-1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+
+    /* transition: transform 300ms; */
+    /* background-color: black; */
+    /* float: left; */
+
+}
+
+.i-38 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/38.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.i-5 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/5.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.sec-1:hover .sec-1-txt {
+    display: block;
+}
+
+.sec-2:hover .sec-2-txt {
+    display: block;
+}
+
+.sec-3:hover .sec-3-txt {
+    display: block;
+}
+
+/* .sec-1-txt {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    margin: 450px 0 0 31px;
+    font-size: 27px;
+    display: none;
+} */
+
+.sec-2-txt {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    margin: 32% 0 0 3%;
+    font-size: 27px;
+    display: none;
+}
+
+.sec-3-txt {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    margin: 32% 0 0 3%;
+    font-size: 27px;
+    display: none;
+}
+
+.sec-2:hover .borders-top {
+    width: 20%;
+
+}
+
+.sec-2:hover .borders-right-bd2 {
+    height: 73%;
+}
+
+.sec-2:hover .borders-left {
+    height: 73%;
+
+}
+
+.sec-2:hover .borders-bottom {
+    width: 20%;
+}
+
+.sec-3:hover .borders-top {
+    width: 21%;
+
+}
+
+.sec-3:hover .borders-right-bd3 {
+    height: 73%;
+}
+
+.sec-3:hover .borders-left {
+    height: 73%;
+
+}
+
+.sec-3:hover .borders-bottom {
+    width: 21%;
+}
+
+#bd2 {
+    /* width: 20%; */
+}
+
+.borders-right-bd3 {
+    width: 21%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.borders-right-bd2 {
+    width: 20%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+#bd3 {
+    /* width: 21%; */
+}
+
+.txt-sec {
+    width: 86%;
+    height: 85%;
+    margin: auto;
+    padding-bottom: 25;
+}
+
+.txt-back-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/a-6.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.txt-sec-text {
+    height: 400px;
+    width: 350px;
+    /* background-color: blue; */
+    position: absolute;
+    margin: 100 0 0 115;
+    text-align: center;
+
+}
+
+.txt-heading {
+    font-size: 40;
+    margin: 0 0 10 0;
+}
+
+.line {
+    align-items: center;
+}
+
+.line hr {
+    width: 50px;
+    color: black;
+    margin: auto;
+}
+
+.txt-txt {
+    text-align: justify;
+    font-size: 23px;
+    color: rgba(110, 110, 110, 0.7);
+    margin: 10 0 25 0;
+}
+
+.txt-button input {
+    padding: 12 30;
+    /* font-weight: bold; */
+    font-size: 18;
+    letter-spacing: 2;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    transition: 0.65s;
+}
+
+.txt-button input:hover {
+    background-color: rgba(110, 110, 110, 0.7);
+    color: rgb(255, 255, 255);
+    border: 0;
+    cursor: pointer;
+}
+
+.thrd-sec {
+    padding-bottom: 25;
+}
+
+.thrd {
+    overflow: hidden;
+    /* float: left; */
+    /* position: absolute; */
+    display: flex;
+    width: 86%;
+    height: 65%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.thrd-1 {
+    /* position: absolute; */
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.thrd-1:hover .i-33 {
+    width: 102%;
+    height: 105%;
+}
+
+.thrd-borders-right {
+    width: 45.5%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.thrd-borders-left {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.thrd-borders-top {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.thrd-borders-bottom {
+    width: 0%;
+    height: 59%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+
+.thrd-1:hover .thrd-borders-right {
+    height: 59%;
+}
+
+.thrd-1:hover .thrd-borders-left {
+    height: 59%;
+}
+
+.thrd-1:hover .thrd-borders-top {
+    width: 45.5%;
+}
+
+.thrd-1:hover .thrd-borders-bottom {
+    width: 45.5%;
+}
+
+.thrd-borders2-bottom {
+    width: 0%;
+    height: 59%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+.thrd-borders2-top {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+.thrd-borders2-right {
+    width: 22%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+.thrd-borders2-left {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    /* top: 100%; */
+    margin: 17px 20 0 15px;
+    z-index: 2;
+    background-color: transparent;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    transition: 0.5s;
+}
+.thrd-2:hover .thrd-borders2-right {
+    height: 59%;
+}
+.thrd-2:hover .thrd-borders2-left {
+    height: 59%;
+}
+.thrd-2:hover .thrd-borders2-top {
+    width: 22%;
+}
+.thrd-2:hover .thrd-borders2-bottom {
+    width: 22%;
+}
+.thrd-2 {
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 20;
+}
+
+.thrd-2:hover .i-35 {
+    width: 102%;
+    height: 105%;
+}
+
+.thrd-1-txt,
+.thrd-2-txt {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    margin: 26% 0 0 3%;
+    font-size: 27px;
+    display: none;
+}
+
+.thrd-1-txt {
+    color: black;
+}
+
+.thrd-1:hover .thrd-1-txt {
+    display: block;
+}
+
+.thrd-2:hover .thrd-2-txt {
+    display: block;
+}
+
+.i-4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/4.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    /* transition: transform 300ms; */
+    /* background-color: black; */
+    /* float: left; */
+
+}
+
+.txt-overlay {
+    width: 48%;
+    height: 65%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.thrd-1:hover .i-4 {
+    width: 102%;
+    height: 105%;
+}
+
+.i-7 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/photo/7.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.thrd-2:hover .i-7 {
+    width: 102%;
+    height: 105%;
+}
+
+.thrd-2 .txt-overlay-2 {
+    height: 427px;
+    position: absolute;
+    width: 330px;
+    background-color: #5e5952a1;
+    z-index: 2;
+}
+
+
+/*FOOTER SECTION*/
+
+
+.foot {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 86%;
+    height: 40%;
+    z-index: -50;
+    margin: auto;
+    padding: 100 0 0 0;
+    display: flex;
+    /* padding: 30 0 0 0; */
+}
+
+.about-us {
+    /* float: left; */
+    width: 20%;
+    padding: 0 20 0 50;
+}
+
+.about-us-body {
+    padding: 20 0 0 0;
+    font-size: 15;
+    color: rgb(168, 168, 168);
+}
+
+.foot-div-body ul {
+    padding: 12px 0 0 18px;
+    color: rgb(168, 168, 168);
+}
+
+.foot-div-body ul li {
+    padding: 12px 0 0 0;
+}
+
+.foot-div-body ul li a {
+    color: rgb(168, 168, 168);
+}
+
+.foot-div-body ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.hori-line {
+    width: 0;
+    height: 195px;
+    border-left: 1px solid rgb(168, 168, 168);
+    /* float: left; */
+}
+
+.follow-us,
+.whats-hot,
+.company {
+    padding: 0 0 0 50;
+    width: 20%;
+    /* float: left; */
+}
+
+.foot-head {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.copy-right {
+    display: block;
+    width: 86%;
+    height: 100;
+    margin: auto;
+    text-align: center;
+    color: rgb(168, 168, 168);
+}
+
+.copy-right-txt {
+    padding: 50 0 0 0;
+    display: inline-block;
+}
+
+/*SCROLL TO TOP BUTTON CSS*/
+.upward-top-button{
+    background-color: #E2B741;
+    width: 50px;
+    text-align: center;
+    font-size: 40;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 100%;
+    height: 50px;
+
+}
+.upward-top-button p{
+    padding-top: 10;
+}
+.top-button{
+    /* position: absolute; */
+    bottom: 10px;
+    right: 21px;
+    position: fixed;
+}
+.top-button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*SCROLL TO TOP BUTTON CSS END*/
